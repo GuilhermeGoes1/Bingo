@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1 class="nav-titulo">BINGO</h1>
+    </nav>
+
+    <main>
+        <div class="area_cartelas">
+            <div id="nav_area_cartelas">
+                <div class="titulo">
+                    <h1>Area das cartelas</h1>
+                </div>
+                <div class="nav_botoes">
+                    <button id="botaoGerarCartela" onclick="gerarCartelaHTML()">Criar
+                        cartela</button>
+                    <button id="reset" onclick="reiniciarJogo()">Reiniciar
+                        Jogo</button>
+                </div>
+            </div>
+            <div id="bingo"></div>
+        </div>
+        <div class="area_sorteio">
+            <div id="nav_area_sorteio">
+                <div class="titulo">
+                    <h1>Área do Jogo</h1>
+                </div>
+                <div class="nav_botoes">
+                    <button id="botaoJogar" onclick="jogarBingo()">Jogar</button>
+                </div>
+            </div>
+            <div id="sorteados">
+            </div>
+            <h2 id="vencedor"></h2>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
