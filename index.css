@@ -25,12 +25,21 @@ body {
 }
 
 button {
+    cursor: pointer;
     font-size: 18px;
     width: 130px;
     height: 40px;
     background-color: rgb(78, 178, 78);
     color: whitesmoke;
     border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgb(67, 159, 67);
+    transition: .5s;
+    color: rgb(238, 237, 237);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
